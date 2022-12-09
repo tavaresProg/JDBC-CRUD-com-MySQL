@@ -1,0 +1,15 @@
+package br.com.agenda.dao;
+
+import br.com.agenda.model.Contato;
+
+public class ContatoDAO {
+
+	/*
+	 * CRUD C: CREATE R: READ U: UPDATE D: DELETE
+	 */
+
+	public void save(Contato contato) {
+
+	}
+
+}

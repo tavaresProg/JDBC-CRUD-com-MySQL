@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\Arthur\OneDrive\Área de Trabalho\CRUD_MySQL\.metadata\.plugins\org.eclipse.jdt.core
+3471214481.index
+1509799344.index
+1865797976.index
+19548662.index

@@ -1,0 +1,23 @@
+package br.com.agenda.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import br.com.agenda.model.Contato;
+
+public class ContatoDAO {
+
+	/*
+	 * CRUD C: CREATE R: READ U: UPDATE D: DELETE
+	 */
+
+	public void save(Contato contato) {
+
+		String sql = "INSERT INTO contatos(nome, idade, datacadastro) VALUES (?, ?, ?)";
+
+		Connection con = null;
+		PreparedStatement pstm = null;
+		
+	}
+
+}

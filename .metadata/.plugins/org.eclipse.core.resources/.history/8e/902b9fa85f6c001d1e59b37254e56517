@@ -1,0 +1,8 @@
+package br.com.agenda.testes;
+
+public class TestaDelete {
+
+	public static void main(String[] args) {
+
+	}
+}
