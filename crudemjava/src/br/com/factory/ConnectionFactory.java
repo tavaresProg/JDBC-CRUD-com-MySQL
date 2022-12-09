@@ -7,13 +7,13 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 
 	// Nome do usuário do MySql
-	private static final String USERNAME = "root";
+	private static final String USERNAME = "SEU USERNAME AQUI";
 
 	// Senha do banco
-	private static final String PASSWORD = "Umbra*1997";
+	private static final String PASSWORD = "SUA SENHA AQUI";
 
 	// Caminho do banco de dados, porta e o nome do banco de dados
-	private static final String DATABASE_URL = "jdbc:mysql://localhost/agenda?useTimezone=true&serverTimezone=UTC";
+	private static final String DATABASE_URL = "jdbc:mysql://localhost/agenda?useTimezone=true&serverTimezone=UTC(EXEMPLO DE CAMINHO PARA O BANCO)";
 
 	/*
 	 * Conexão com o banco de dados
