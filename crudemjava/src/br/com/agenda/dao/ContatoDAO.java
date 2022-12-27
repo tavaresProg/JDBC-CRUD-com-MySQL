@@ -20,17 +20,12 @@ public class ContatoDAO {
 		PreparedStatement pstm = null;
 
 		try {
-			// Criar uma conexão com o banco de dados
-			conn = ConnectionFactory.creatConnectionToMySQL();
 
-			// Criamos uma PreparedStatement para executar uma query
+			conn = ConnectionFactory.creatConnectionToMySQL();
 			pstm = (PreparedStatement) conn.prepareStatement(sql);
-			// Adicionar os valores que são esperados pela query
 			pstm.setString(1, contato.getNome());
 			pstm.setInt(2, contato.getIdade());
 			pstm.setDate(3, new Date(contato.getDataCadastro().getTime()));
-
-			// Executar a query
 			pstm.execute();
 
 			System.out.println("Contato salvo com sucesso!");
@@ -38,7 +33,7 @@ public class ContatoDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			// Fechar as conexões
+
 			try {
 				if (pstm != null) {
 					pstm.close();
@@ -61,7 +56,6 @@ public class ContatoDAO {
 		Connection conn = null;
 		PreparedStatement pstm = null;
 
-		// Classe que vai recuperar os dados do banco **SELECT**
 		ResultSet rset = null;
 
 		try {
@@ -75,13 +69,9 @@ public class ContatoDAO {
 
 				Contato contato = new Contato();
 
-				// Recuperar o id
 				contato.setId(rset.getInt("id"));
-				// Recuperar o nome
 				contato.setNome(rset.getString("nome"));
-				// Recuperar a idade
 				contato.setIdade(rset.getInt("idade"));
-				// Recuperar a data de cadastro
 				contato.setDataCadastro(rset.getDate("dataCadastro"));
 
 				contatos.add(contato);
@@ -115,17 +105,13 @@ public class ContatoDAO {
 		PreparedStatement pstm = null;
 
 		try {
-			// Criar uma conexão com o banco de dados
-			conn = ConnectionFactory.creatConnectionToMySQL();
 
-			// Criamos uma PreparedStatement para executar uma query
+			conn = ConnectionFactory.creatConnectionToMySQL();
 			pstm = (PreparedStatement) conn.prepareStatement(sql);
-			// Adicionar os valores que são esperados pela query
 			pstm.setString(1, contato.getNome());
 			pstm.setInt(2, contato.getIdade());
 			pstm.setDate(3, new Date(contato.getDataCadastro().getTime()));
 			pstm.setInt(4, contato.getId());
-			// Executar a query
 			pstm.execute();
 
 			System.out.println("Contato atualizado com sucesso!");
@@ -133,7 +119,6 @@ public class ContatoDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			// Fechar as conexões
 			try {
 				if (pstm != null) {
 					pstm.close();
@@ -154,15 +139,10 @@ public class ContatoDAO {
 		PreparedStatement pstm = null;
 
 		try {
-			// Criar uma conexão com o banco de dados
+
 			conn = ConnectionFactory.creatConnectionToMySQL();
-
-			// Criamos uma PreparedStatement para executar uma query
 			pstm = (PreparedStatement) conn.prepareStatement(sql);
-			// Adicionar os valores que são esperados pela query
 			pstm.setInt(1, contato.getId());
-
-			// Executar a query
 			pstm.execute();
 
 			System.out.println("Contato apagado com sucesso!");
@@ -170,7 +150,7 @@ public class ContatoDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			// Fechar as conexões
+
 			try {
 				if (pstm != null) {
 					pstm.close();
