@@ -21,7 +21,7 @@
 
 LOCK TABLES `contatos` WRITE;
 /*!40000 ALTER TABLE `contatos` DISABLE KEYS */;
-INSERT INTO `contatos` VALUES (1,'Maria Gabriela',55,'2022-11-21'),(2,'João Gabriel',78,'2022-11-21'),(4,'Maria Gabriela Dias',35,'2022-11-22'),(5,'Arthur Leonel',25,'2022-11-25');
+INSERT INTO `contatos` VALUES (1,'Maria Gabriela',55,'2022-11-21'),(2,'João Gabriel',78,'2022-11-21'),(4,'Maria Gabriela Dias',35,'2022-11-22'),(5,'José Robson',25,'2022-11-25');
 /*!40000 ALTER TABLE `contatos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
